@@ -1,45 +1,51 @@
+import styles from './page.module.css';
+
 export default function Home() {
     return (
         <main>
-            <h1 className="text-danger">Hello Bootstrap</h1>
-            <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first items accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. Its also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. Its also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third items accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. Its also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
+            <section className={styles.hero}>
+                <div className="container">
+                    <h1 className="mb-5"><span>Fast sampling, high quality:</span><br/>
+                    The all-new IsoTube</h1>
+                    <p><a className="button orange-bg" href="#">Explore the New IsoTube</a></p>
+                </div>
+            </section>
+
+            <section>
+                <div className="container">
+                    <h2>Sampling Devices</h2>
+
+                    <div className="row">
+                        <div className="col">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3 className="card-title">IsoSampler Pro</h3>
+                                    <p className="card-text">Improved mudgas sampling manifold, completely redesigned for seamless integration with modern field equipment.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3 className="card-title">IsoSampler MAX</h3>
+                                    <p className="card-text">COMING SOON - Automated sample collection and metadata storage for next-level accuracy and efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3 className="card-title">Wellhead Sampler</h3>
+                                    <p className="card-text">Pressure-regulated gas sampler for use with gas sources up to 3,000 psi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     );
 }
