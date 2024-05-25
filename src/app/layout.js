@@ -4,6 +4,7 @@ import "./globals.css";
 import BootstrapClient from '@/components/BootstrapClient';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -17,8 +18,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserrat.className}>
         <Header />
-        {children}
+
+        <main>
+            <Breadcrumbs />
+            {children}
+        </main>
+
         <BootstrapClient />
+
         <Footer />
     </body>
     </html>

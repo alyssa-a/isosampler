@@ -24,17 +24,13 @@ body {
     font-size: 16px;
 }
 
-section {
-    padding: 3rem 0;
-}
-
 h1, h2, h3 {
     font-weight: 700;
     color: var(--sr-steel);
 }
 
-h2 {
-    margin-bottom: 2rem;
+p {
+    line-height: 1.6;
 }
 
 header {
@@ -54,6 +50,14 @@ header::before {
     height: 10px;
     background-color: var(--sr-orange);
     transform: skew(-30deg);
+}
+
+header > .container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 footer {
@@ -94,10 +98,14 @@ footer .copyright {
     color: #FFFFFF;
 }
 
-.orange-bg {
-    background-color: var(--sr-orange);
+.green-bg {
+    background-color: var(--sr-green);
     color: #FFFFFF;
 }
+
+    .green-bg h2 {
+        color: #FFFFFF;
+    }
 
 .orange-bg {
     background-color: var(--accessible-orange);
@@ -115,6 +123,27 @@ a.button {
     padding: 1rem;
 }
 
+#breadcrumbs {
+    background-color: var(--light-grey);
+    font-size: 14px;
+}
+
+#primary {
+    order: 1;
+}
+
+#sidebar {
+    order: 2;
+}
+
+/* table of contents */
+#toc h2 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: var(--sr-green);
+    padding: 1rem;
+}
+
 /* Bootstrap overrides */
 .card {
     height: 100%;
@@ -125,4 +154,23 @@ a.button {
 .card-title {
     color: var(--sr-steel);
     font-size: 1.5rem;
+}
+
+.navbar-nav > .nav-item .nav-link {
+    color: var(--sr-steel);
+    font-weight: 600;
+}
+
+.nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item a {
+    color: var(--sr-steel);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
 }

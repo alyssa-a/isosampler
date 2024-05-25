@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export default function Home() {
     return (
-        <main>
+        <>
             <section className={styles.hero}>
                 <div className="container">
                     <h1 className="mb-5"><span>Fast sampling, high quality:</span><br/>
@@ -46,6 +46,22 @@ export default function Home() {
                 </div>
             </section>
 
-        </main>
+            <section className="green-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <h2>Contact Isotech to request a quote!</h2>
+                        </div>
+
+                        <div className="col">
+                            <p>(217) 398-3490<br/>
+                            onlineorders@stratumreservoir.com<br/>
+                            isotechlabs.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </>
     );
 }
