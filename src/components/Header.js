@@ -15,23 +15,23 @@ export default function Header() {
                     </a>
                 </div>
 
-                <nav class="navbar navbar-expand-lg p-0">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                <nav className="navbar navbar-expand-lg p-0">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Home</a>
                             </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">IsoTube</a>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">IsoTube</a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="devicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Devices</a>
-                                <ul class="dropdown-menu" aria-labelledby="devicesDropdown">
-                                    <li><a class="dropdown-item" href="#">IsoSampler Pro</a></li>
-                                    <li><a class="dropdown-item" href="#">IsoSampler MAX</a></li>
-                                    <li><a class="dropdown-item" href="#">Wellhead Sampler</a></li>
+                            <li className="nav-item dropdown">
+                                <a className="nav-link dropdown-toggle" href="#" id="devicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Devices</a>
+                                <ul className="dropdown-menu" aria-labelledby="devicesDropdown">
+                                    <li><a className="dropdown-item" href="#">IsoSampler Pro</a></li>
+                                    <li><a className="dropdown-item" href="#">IsoSampler MAX</a></li>
+                                    <li><a className="dropdown-item" href="#">Wellhead Sampler</a></li>
                                 </ul>
                             </li>
                         </ul>

@@ -5,6 +5,7 @@
     --accessible-orange: #B15D25;
     --dark-grey: #313133;
     --light-grey: #DBDDE1;
+    --link-color: #0076A5;
     --max-width: 1140px;
 }
 
@@ -31,6 +32,10 @@ h1, h2, h3 {
 
 p {
     line-height: 1.6;
+}
+
+a {
+    color: var(--link-color);
 }
 
 header {
