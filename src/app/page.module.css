@@ -1,6 +1,27 @@
 .hero {
-    background-color: var(--sr-steel);
+    position: relative;
     min-height: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--sr-steel);
+    opacity: 0.9;
+    z-index: 0;
+}
+
+.hero > div:first-of-type {
+    position: relative;
+    z-index: 1;
 }
 
 .hero h1 {
@@ -10,4 +31,33 @@
 .hero h1 span {
     font-weight: 400;
     font-size: 1.75rem;
+}
+
+.isotube {
+    position: absolute;
+    right: -50px;
+    bottom: 3rem;
+    width: 60%;
+    text-align: right;
+    z-index: 1;
+}
+
+.isotube img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+
+    filter: drop-shadow(15px 10px 20px #01292F);
+    
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.contact {
+    line-height: 1;
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap: 15px 10px;
 }
