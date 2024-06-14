@@ -13,11 +13,11 @@ export default function SubpageLayout({ children }) {
         <div className="container">
             <div className="row">
 
-                <div id="sidebar" className="col-3">
+                <div id="sidebar" className="col-12 col-md-3">
                     <TableOfContents />
                 </div>
 
-                <div id="primary" className="col-9 mb-4">
+                <div id="primary" className="col-12 col-md-9 mb-4">
                     {children}
                 </div>
 

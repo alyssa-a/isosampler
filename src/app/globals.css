@@ -247,3 +247,23 @@ a.button {
 .breadcrumb-item + .breadcrumb-item::before {
     content: '>';
 }
+
+@media screen and (max-width: 767px) {
+    #primary {
+        order: 2;
+    }
+    
+    #sidebar {
+        order: 1;
+    }
+
+    #toc {
+        border-bottom: 1px solid var(--sr-green);
+        margin: 1rem 0;
+    }
+
+    #toc a {
+        color: var(--link-color);
+        text-decoration: underline;
+    }
+}
