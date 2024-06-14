@@ -1,13 +1,13 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import TableOfContents from "@/components/TableOfContents";
 
-export default function SubpageLayout({ children, title }) {
+export default function SubpageLayout({ children }) {
     return (
         <>
         <Breadcrumbs />
 
         <div className="container">
-            {title}
+            <h1>Page Title</h1>
         </div>
 
         <div className="container">
@@ -17,7 +17,7 @@ export default function SubpageLayout({ children, title }) {
                     <TableOfContents />
                 </div>
 
-                <div id="primary" className="col-9">
+                <div id="primary" className="col-9 mb-4">
                     {children}
                 </div>
 
