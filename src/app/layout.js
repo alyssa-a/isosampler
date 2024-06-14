@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
         <Header />
 
         <main>
-            <Breadcrumbs />
             {children}
         </main>
 
