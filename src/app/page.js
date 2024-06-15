@@ -54,7 +54,7 @@ export default function Home() {
                         <div className="col-12 col-md-4 mb-3 mb-md-0">
                             <div className="card">
                                 <div className="card-body">
-                                    <h3 className="card-title">Wellhead Sampler <FontAwesomeIcon icon={faAnglesRight} className="fs-1rem orange-text"/></h3>
+                                    <h3 className="card-title">IsoSampler Go <FontAwesomeIcon icon={faAnglesRight} className="fs-1rem orange-text"/></h3>
                                     <p className="card-text">Pressure-regulated gas sampler for use with gas sources up to 3,000 psi.</p>
                                 </div>
                             </div>

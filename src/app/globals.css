@@ -43,6 +43,14 @@ a {
     color: var(--link-color);
 }
 
+li {
+    margin-bottom: 0.5rem;
+}
+
+li > ul {
+    margin-top: 0.5rem;
+}
+
 header {
     border-top: 10px solid var(--sr-steel);
     border-bottom: 1px solid #BBBBBB;
@@ -102,6 +110,12 @@ footer .copyright {
     font-size: 14px;
 }
 
+/* Focus states */
+
+*:focus {
+    outline: 3px solid var(--sr-orange);
+}
+
 /* background colors */
 .steel-bg {
     background-color: var(--sr-steel);
@@ -154,6 +168,10 @@ a.button {
 
 #primary {
     order: 1;
+}
+
+#primary section:not(:last-of-type) {
+    margin-bottom: 2rem;
 }
 
 #sidebar {
@@ -229,7 +247,7 @@ a.button {
     color: #FFFFFF;
 }
 
-.navbar-nav > .nav-item .nav-link {
+.nav > .nav-item .nav-link {
     color: var(--sr-steel);
     font-weight: 600;
 }
@@ -239,6 +257,24 @@ a.button {
     padding-bottom: 0;
 }
 
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.25);
+}
+
+.dropdown-menu a {
+    color: var(--sr-steel);
+    text-decoration: none;
+}
+
+.breadcrumb-item {
+    margin: 0;
+    color: var(--sr-steel);
+}
+
 .breadcrumb-item.active,
 .breadcrumb-item a {
     color: var(--sr-steel);
@@ -246,8 +282,38 @@ a.button {
 
 .breadcrumb-item + .breadcrumb-item::before {
     content: '>';
+    color: var(--sr-steel);
 }
 
+.accordion-item {
+    border-radius: 0 !important;
+    border: 1px solid var(--dark-grey) !important;
+    margin-bottom: 1rem;
+}
+
+.accordion-header button {
+    color: var(--sr-steel);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button,
+.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+    border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--sr-steel);
+    background-color: var(--light-grey);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: 3px solid var(--sr-orange);
+}
+
+/* Responsive styles */
 @media screen and (max-width: 767px) {
     #primary {
         order: 2;

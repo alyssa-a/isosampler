@@ -1,13 +1,13 @@
-import Breadcrumbs from "@/components/Breadcrumbs";
-import TableOfContents from "@/components/TableOfContents";
+import Breadcrumbs from "./Breadcrumbs";
+import TableOfContents from "./TableOfContents";
 
-export default function SubpageLayout({ children }) {
+export default function Subpage({ title, breadcrumbs, children }) {
     return (
         <>
-        <Breadcrumbs />
+        <Breadcrumbs pageTitles={breadcrumbs}/>
 
-        <div className="container">
-            <h1>Page Title</h1>
+        <div className="container mb-3">
+            <h1>{title}</h1>
         </div>
 
         <div className="container">
@@ -25,4 +25,4 @@ export default function SubpageLayout({ children }) {
         </div>
         </>
     );
-  }
+}
