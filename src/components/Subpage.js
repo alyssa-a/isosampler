@@ -14,7 +14,7 @@ export default function Subpage({ title, breadcrumbs, children }) {
             <div className="row">
 
                 <div id="sidebar" className="col-12 col-md-3">
-                    <TableOfContents />
+                    <TableOfContents/>
                 </div>
 
                 <div id="primary" className="col-12 col-md-9 mb-4">

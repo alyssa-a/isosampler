@@ -38,6 +38,7 @@ export default function IsoSamplerPro() {
                     src={dimensions}
                     alt="Top view, side view, and front view of the IsoSampler Pro"
                     width="800"
+                    className="d-block mx-auto img-fluid"
                 />
             </section>
 
@@ -81,6 +82,7 @@ export default function IsoSamplerPro() {
                     src={hardware}
                     alt="Diagram labeling the features of the IsoSampler Pro"
                     width="800"
+                    className="d-block mx-auto img-fluid"
                 />
             </section>
 

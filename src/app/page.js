@@ -54,7 +54,7 @@ export default function Home() {
                         <div className="col-12 col-md-4 mb-3 mb-md-0">
                             <div className="card">
                                 <div className="card-body">
-                                    <h3 className="card-title">IsoSampler Go <FontAwesomeIcon icon={faAnglesRight} className="fs-1rem orange-text"/></h3>
+                                    <h3 className="card-title"><Link href="/isosampler-go" className="stretched-link">IsoSampler Go <FontAwesomeIcon icon={faAnglesRight} className="fs-1rem orange-text"/></Link></h3>
                                     <p className="card-text">Pressure-regulated gas sampler for use with gas sources up to 3,000 psi.</p>
                                 </div>
                             </div>
@@ -71,9 +71,13 @@ export default function Home() {
                         </div>
 
                         <div className="col-sm-12 col-md-6">
-                            <p className={styles.contact}><FontAwesomeIcon icon={faPhone} /> (217) 398-3490<br/>
-                            <FontAwesomeIcon icon={faEnvelope} /> onlineorders@stratumreservoir.com<br/>
-                            <FontAwesomeIcon icon={faArrowPointer} /> isotechlabs.com</p>
+                            <p className={styles.contact}>
+                                <FontAwesomeIcon icon={faPhone} /> (217) 398-3490
+
+                                <FontAwesomeIcon icon={faEnvelope} /> <Link className="no-underline" href="mailto:onlineorders@stratumreservoir.com">onlineorders@stratumreservoir.com</Link>
+
+                                <FontAwesomeIcon icon={faArrowPointer} /> <Link className="no-underline" href="https://www.isotechlabs.com/">isotechlabs.com</Link>
+                            </p>
                         </div>
                     </div>
                 </div>

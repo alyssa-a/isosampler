@@ -1,6 +1,6 @@
 import Image from "next/image";
-import isotube from "@/public/images/IsoTube.png"
 import Subpage from "@/components/Subpage";
+import isotube from "@/public/images/IsoTube.png"
 
 export const metadata = {
     title: "IsoTube | Isotech",
@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function IsoSamplerPro() {
-    const pageTitle = "IsoTube";
+    const pageTitle = "All-New IsoTube";
 
     return (
         <Subpage title={pageTitle} breadcrumbs={[pageTitle]}>
@@ -26,6 +26,15 @@ export default function IsoSamplerPro() {
                     <li>Dimensions: Diameter 33mm(7.56”), OAL 192mm(7.56”)</li>
                     <li>Volume : 112.6 cc</li>
                 </ul>
+
+                <Image 
+                    priority
+                    src={isotube}
+                    alt="IsoTube"
+                    width="800"
+                    height="176"
+                    className="d-block mx-auto img-fluid"
+                />
 
             </section>
 
