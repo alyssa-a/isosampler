@@ -12,7 +12,7 @@ export default function TableOfContents() {
         let options = {
             root: null,
             rootMargin: "0px",
-            threshold: 0.0,
+            threshold: 0,
         };
 
         const handleIntersect = (entries, observer) => {
@@ -33,7 +33,7 @@ export default function TableOfContents() {
             const text = elem.querySelector("h2").innerText;
             sections.push({id, text});
 
-            observer.observe(elem);
+            // observer.observe(elem);
         });
 
         setSections(sections);
