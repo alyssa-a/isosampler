@@ -12,17 +12,19 @@ export default function TableOfContents() {
         let options = {
             root: null,
             rootMargin: "0px",
-            threshold: 0,
+            threshold: 0.8,
         };
 
         const handleIntersect = (entries, observer) => {
-            entries.forEach((entry) => { 
+            entries.forEach((entry) => {
+                const tocLinks = document.querySelectorAll("#toc a");
                 const tocItem = document.querySelector(`#toc a[href="#${entry.target.id}"]`);
-                if (entry.isIntersecting) {
+                if (entry.isIntersecting ) {
+                    tocLinks.forEach(link => {
+                        link.classList.remove("active");
+                    });
                     tocItem.classList.add("active");
-                } else {
-                    tocItem.classList.remove("active");
-                }
+                } 
             });
         }
         
@@ -30,14 +32,14 @@ export default function TableOfContents() {
 
         elements.forEach(elem => {
             const id = elem.id;
-            const text = elem.querySelector("h2").innerText;
+            const text = elem.querySelector("h2").innerText
             sections.push({id, text});
 
-            // observer.observe(elem);
+            observer.observe(elem);
         });
 
         setSections(sections);
-        
+
     }, []);
 
     if (sections && sections.length > 0 ) {

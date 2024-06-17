@@ -3,24 +3,26 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../public/images/isotech-logo.svg';
+import logo from '@/public/images/isotech-logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState();
     const [visible, setVisible] = useState(true);
 
     useEffect(() => {
+        setWidth(window.innerWidth);
+        
         const handleResize = () => {
             setWidth(window.innerWidth);
-          };
+        };
       
-          window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize);
       
-          return () => {
+        return () => {
             window.removeEventListener('resize', handleResize);
-          };
+        };
     }, []);
 
     useEffect(() => {

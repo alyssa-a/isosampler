@@ -26,6 +26,10 @@ body {
     font-size: 16px;
 }
 
+section {
+    scroll-margin-top: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--sr-steel);
 }
@@ -398,5 +402,10 @@ a.button {
     #toc a {
         color: var(--link-color);
         text-decoration: underline;
+    }
+
+    #toc a.active {
+        font-weight: 400;
+        border-bottom: none;
     }
 }

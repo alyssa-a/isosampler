@@ -14,7 +14,7 @@ export default function IsoSamplerPro() {
         <Subpage title={pageTitle} breadcrumbs={[pageTitle]}>
             <p className="fs-1-25rem">Seamless integration with field equipment for faster, higher-quality sampling than legacy systems and competitors.</p>
 
-            <section>
+            <section id="specifications">
                 <h2>Specifications</h2>
 
                 <ul className="float-left">
@@ -38,7 +38,7 @@ export default function IsoSamplerPro() {
 
             </section>
 
-            <section>
+            <section id="faq">
                 <h2>Frequently Asked Questions</h2>
 
                 <p><strong>What are the improvements with new IsoTubes?</strong><br/>
