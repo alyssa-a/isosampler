@@ -9,7 +9,7 @@ import switchLow from '@/public/images/Pump Output Low.png';
 import rack from '@/public/images/401 Rack.png';
 import installed from '@/public/images/401_Installed.png';
 import test from '@/public/images/401 Test.png';
-import chucks from '@/public/images/401.png';
+import chucks from '@/public/images/401.PNG';
 import boxLabel from '@/public/images/IsoTube Box Label.jpg';
 import label from '@/public/images/IsoTube Label.jpg';
 
