@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/public/images/isotech-logo.svg';
@@ -10,6 +11,7 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 export default function Header() {
     const [width, setWidth] = useState();
     const [visible, setVisible] = useState(true);
+    const pathname = usePathname();
 
     useEffect(() => {
         setWidth(window.innerWidth);
@@ -26,13 +28,14 @@ export default function Header() {
     }, []);
 
     useEffect(() => {
+        setVisible(false);
+
         if (width > 991) {
             setVisible(true);
         } else if (width <= 991) {
             setVisible(false);
         }
-        
-    }, [width]);
+    }, [width, pathname]);
 
     const toggleMenu = (e) => {
         setVisible(!visible);

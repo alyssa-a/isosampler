@@ -14,7 +14,7 @@ export default function Home() {
         <>
             <section className={`${styles.hero} ${styles.section}`} style={{backgroundImage: `url(${bg.src})`}}>
                 <div className="container">
-                    <h1 className="mb-5"><span>Fast sampling, high quality:</span><br/>
+                    <h1 className="mb-4 mb-md-5"><span>Fast sampling, high quality:</span><br/>
                     The all-new IsoTube</h1>
                     <p><Link href="/isotube" className="button orange-bg">Explore the New IsoTube</Link></p>
                 </div>
