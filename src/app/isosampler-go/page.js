@@ -17,7 +17,7 @@ export default function IsoSamplerGo() {
                 <h2>Sampling Instructions</h2>
 
                 <p><strong>CAUTION:</strong> The IsoSampler Go includes a pressure regulator that is rated for use up to a maximum of 3000 psig (200 bar).  If pressures higher than this could be encountered, additional pressure control will be required.</p>
-                <p><strong>NOTE:</strong> IsoTubes are NOT suitable for gases containing hydrogen sulfide (H2S, sour gas).</p>
+                <p><strong>NOTE:</strong> IsoTubes are NOT suitable for gases containing hydrogen sulfide (H<sub>2</sub>S, sour gas).</p>
 
                 <div className="accordion" id="instructionsAccordion">
 

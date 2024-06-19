@@ -184,7 +184,7 @@ export default function IsoSamplerPro() {
 
             <section id="samplingInstructions">
                 <h2>Sampling Instructions</h2>
-                <p><strong>Note: IsoTubes are not suitable for collecting gases containing hydrogen sulfide (H2S, sour gas)</strong></p>
+                <p><strong>Note: IsoTubes are not suitable for collecting gases containing hydrogen sulfide (H<sub>2</sub>S, sour gas)</strong></p>
                 <p>The IsoSampler Pro has two pump output settings. <strong>Make sure you have selected the correct pump output setting for your gas flow rate prior to taking a sample, or your samples may be compromised.</strong> See the <a href="#installation">installation section</a> above for more information.</p>
 
                 <div className="accordion" id="instructionsAccordion">
