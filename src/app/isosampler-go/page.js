@@ -1,7 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
+import Link from 'next/link';
 import Subpage from '@/components/Subpage';
 import label from '@/public/images/IsoSampler-Go-Label.jpg';
+import s1 from '@/public/images/No IsoTube - Valve Off (Step 1).png';
+import s2b2 from '@/public/images/Connected IsoTube - Valve Off (Step 2, bullet 2).png';
+import s2b3 from '@/public/images/Connected IsoTube - Valve On (Step 2, bullet 3).png';
+import s2b6 from '@/public/images/IsoTube Disconnected - Valve On (Step 2, bullet 6).png';
 
 export const metadata = {
     title: "IsoSampler Go | Isotech",
@@ -30,6 +35,14 @@ export default function IsoSamplerGo() {
 
                         <div id="instructionsAccordionCollapseOne" className="accordion-collapse collapse" data-bs-parent="#instructionsAccordion">
                             <div className="accordion-body">
+                                <Image 
+                                    priority
+                                    src={s1}
+                                    alt="IsoSampler Go with the valve turned off"
+                                    width="150"
+                                    className="d-block mx-auto mb-3 img-fluid" 
+                                />
+
                                 <ul>
                                     <li>Locate a suitable, vertical port for collecting a sample. A 'suitable port' will supply a dry, liquid free gas sample and should consist of both a ¼" female NPT port, and a control valve that can be used to turn the gas on and off.</li>
                                     <li>Make sure that the threads on the IsoSampler Go are clean and wrap 2 or 3 layers of Teflon<sup>&reg;</sup> tape, clockwise onto the male threads of the Adapter. </li>
@@ -50,10 +63,41 @@ export default function IsoSamplerGo() {
                             <div className="accordion-body">
                                 <ul>
                                     <li>With the IsoSampler Go valve in the horizontal "shut" position, slowly open the control valve on the sampling port. Sample pressure will be indicated on the Inlet Pressure gauge.</li>
-                                    <li>Next push the IsoTube valve into the quick-connect Chuck until it clicks into place.</li>
-                                    <li>Turn the handle on the 3-Way Valve to the vertical "open" position. The IsoTube will fill with gas. Note the pressure on the outlet gauge. The pressure should not be greater than 80 psig.</li>
+
+                                    <li>
+                                        <Image 
+                                            priority
+                                            src={s2b2}
+                                            alt="IsoTube connected to the IsoSampler Go with the valve turned off"
+                                            width="150"
+                                            className="d-block mx-auto mb-3 img-fluid" 
+                                        />
+                                        Next push the IsoTube valve into the quick-connect Chuck until it clicks into place.
+                                    </li>
+
+                                    <li>
+                                        <Image 
+                                            priority
+                                            src={s2b3}
+                                            alt="IsoTube connected to the IsoSampler Go with the valve turned on"
+                                            width="100"
+                                            className="d-block mx-auto mb-3 img-fluid" 
+                                        />
+                                        Turn the handle on the 3-Way Valve to the vertical "open" position. The IsoTube will fill with gas. Note the pressure on the outlet gauge. The pressure should not be greater than 80 psig.
+                                    </li>
+
                                     <li>Purging and filling of the IsoTube is accomplished by rotating the handle on the 3-Way Valve "open" and "shut" for a minimum of 2 seconds in both positions to alternately pressurize and vent the IsoTube. A minimum of 10 cycles is recommended.</li>
-                                    <li>After the IsoTube is filled for the last time, leave the 3-Way Valve in the vertical "open" position. Remove the IsoTube from the sampling Cchuck by pulling back the outer sleeve of the Chuck until the IsoTube is released. </li>
+
+                                    <li>
+                                        <Image 
+                                            priority
+                                            src={s2b6}
+                                            alt="IsoTube disconnected from the IsoSampler Go with the valve turned on"
+                                            width="100"
+                                            className="d-block mx-auto mb-3 img-fluid" 
+                                        />
+                                        After the IsoTube is filled for the last time, leave the 3-Way Valve in the vertical "open" position. Remove the IsoTube from the sampling Chuck by pulling back the outer sleeve of the Chuck until the IsoTube is released.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -99,6 +143,13 @@ export default function IsoSamplerGo() {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="downloads">
+                <h2>Downloads</h2>
+                <ul>
+                    <li><Link href="/files/IsoSampler GO Sampling Instructions.pdf">IsoSampler Go Sampling Instructions</Link></li>
+                </ul>
             </section>
         </Subpage>
     )

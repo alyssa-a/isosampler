@@ -28,8 +28,6 @@ export default function Header() {
     }, []);
 
     useEffect(() => {
-        setVisible(false);
-
         if (width > 991) {
             setVisible(true);
         } else if (width <= 991) {
@@ -58,7 +56,7 @@ export default function Header() {
 
                 <div id="mainNav">
                     { width <= 991 &&
-                        <button type="button" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle main navigation" onClick={toggleMenu}>
+                        <button type="button" id="navToggle" aria-controls="navMenu" aria-expanded={visible ? "true" : "false"} aria-label="Toggle main navigation" onClick={toggleMenu}>
                             { visible ? 
                                 <FontAwesomeIcon icon={faXmark} className="close-menu"/> :
                                 <FontAwesomeIcon icon={faBars} className="open-menu"/>
